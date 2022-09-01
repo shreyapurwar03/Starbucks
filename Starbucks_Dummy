@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Starbucks.Inc</title>
+
+</head>
+<body>
+<script type="text/javascript">
+  window.alert("Welcome to Starbucks!I'm your starbucks assistant and I will help you create your weekly starbucks coffee schedule\n")
+  window.alert("To start,we need to know what your coffee preferences are for each day of the week.Let's start with")
+var a=["Sunday" ,"Monday" ,"Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  var i;
+  var d;
+  var c;
+  var b=[];
+  var size=[];
+  var answer=[];
+  for(i=0;i<7;i++)
+  {
+    d=prompt(a[i]+": Would you prefer a Latte, a Cappucino, or a Frapuccino? Please type 1 for a Latte',2 for a Cappucino, or 3 for a Frappucino" );
+  
+    if(d==1)
+    {
+      b[i]="Latte'";
+    }
+    if(d==2)
+    {
+      b[i]="Cappucino";
+    }
+    if(d==3)
+    {
+      b[i]="Frappucino";
+    }
+    c=prompt("What size  coffee would you like? Please select  1 for a Tall, 2 for a Grande, or 3 for Venti ")
+    if(c==1)
+    {
+      size[i]="Tall";
+    }
+    if(c==2)
+    {
+      size[i]="Grande";
+    }
+    if(c==3)
+    {
+      size[i]="Venti";
+    }
+
+    answer[i]= a[i]+":"+size[i]+"\t"+b[i]+"\n";
+  }
+  
+  
+    window.alert("The following coffee selections will be delivered to your home or office. Thank you for choosing Starbucks!\n"+ answer);
+  
+  
+
+</script>
+</body>
+</html>
